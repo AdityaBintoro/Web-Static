@@ -1,96 +1,96 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="id" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aditya Bintoro | Portofolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./src/output.css">
 </head>
 
-<body>
+<body class="m-0 flex min-h-screen flex-col font-[Segoe_UI,Tahoma,Geneva,Verdana,sans-serif] leading-[1.6] text-slate-800">
 
-    <header>
-        <a href="#home" class="logo">Aditya<span>.dev</span></a>
+    <header class="sticky top-0 z-[1000] flex items-center justify-between bg-linear-to-br from-indigo-600 to-blue-500 px-10 py-3 text-white max-[700px]:flex-col max-[700px]:gap-2 max-[700px]:px-5">
+        <a href="#home" class="text-[22px] font-bold text-white no-underline">Aditya<span class="text-blue-200">.dev</span></a>
         <nav>
-            <ul>
-                <li><a href="#home">Beranda</a></li>
-                <li><a href="#about">Tentang</a></li>
-                <li><a href="#skills">Keahlian</a></li>
-                <li><a href="#contact">Kontak</a></li>
+            <ul class="flex list-none gap-8 p-0 max-[700px]:gap-4">
+                <li><a class="text-[15px] text-white no-underline transition-colors duration-300 hover:text-black" href="#home">Beranda</a></li>
+                <li><a class="text-[15px] text-white no-underline transition-colors duration-300 hover:text-black" href="#about">Tentang</a></li>
+                <li><a class="text-[15px] text-white no-underline transition-colors duration-300 hover:text-black" href="#skills">Keahlian</a></li>
+                <li><a class="text-[15px] text-white no-underline transition-colors duration-300 hover:text-black" href="#contact">Kontak</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section id="home" class="profil">
-            <h1>Aditya Bintoro</h1>
-            <p>Mahasiswa Computer Science, Universitas Cakrawala</p>
+    <main class="flex-1">
+        <section id="home" class="scroll-mt-[60px] px-10 py-[120px] text-center">
+            <h1 class="mb-2 text-[40px]">Aditya Bintoro</h1>
+            <p class="mx-auto max-w-[600px] text-lg text-slate-500">Mahasiswa Computer Science, Universitas Cakrawala</p>
         </section>
 
-        <section id="about" class="tentang">
-            <h2>Tentang Saya</h2>
-            <p>
+        <section id="about" class="scroll-mt-[60px] bg-slate-100 px-10 py-20 text-center">
+            <h2 class="mb-5 text-[26px]">Tentang Saya</h2>
+            <p class="mx-auto max-w-[600px] text-slate-500">
                 Saya mahasiswa aktif yang mempunyai ketertarikan besar dalam web development. Halaman ini saya buat
                 sebagai latihan HTML dan CSS dasar.
             </p>
         </section>
         
-        <section id="skills">
-            <h2>Keahlian</h2>
-            <div class="cards">
-                <article class="card">
-                    <h3>HTML</h3>
-                    <p>Menyusun struktur halaman web dengan tag semantik.</p>
+        <section id="skills" class="scroll-mt-[60px] px-10 py-20 text-center">
+            <h2 class="mb-5 text-[26px]">Keahlian</h2>
+            <div class="flex flex-wrap justify-center gap-5">
+                <article class="w-[240px] rounded-xl border border-slate-200 bg-white px-[18px] py-6 shadow-[0_4px_8px_rgba(0,0,0,0.06)] transition-[transform,box-shadow] duration-200 hover:-translate-y-1.5 hover:shadow-[0_10px_20px_rgba(0,0,0,0.12)]">
+                    <h3 class="mb-2 text-lg">HTML</h3>
+                    <p class="mx-auto max-w-[600px] text-sm text-slate-500">Menyusun struktur halaman web dengan tag semantik.</p>
                 </article>
-                <article class="card">
-                    <h3>CSS</h3>
-                    <p>Mengatur tampilan dan tata letak halaman dengan Flexbox.</p>
+                <article class="w-[240px] rounded-xl border border-slate-200 bg-white px-[18px] py-6 shadow-[0_4px_8px_rgba(0,0,0,0.06)] transition-[transform,box-shadow] duration-200 hover:-translate-y-1.5 hover:shadow-[0_10px_20px_rgba(0,0,0,0.12)]">
+                    <h3 class="mb-2 text-lg">CSS</h3>
+                    <p class="mx-auto max-w-[600px] text-sm text-slate-500">Mengatur tampilan dan tata letak halaman dengan Flexbox.</p>
                 </article>
-                <article class="card">
-                    <h3>JavaScript</h3>
-                    <p>Menambahkan interaksi dan logika pada halaman web.</p>
+                <article class="w-[240px] rounded-xl border border-slate-200 bg-white px-[18px] py-6 shadow-[0_4px_8px_rgba(0,0,0,0.06)] transition-[transform,box-shadow] duration-200 hover:-translate-y-1.5 hover:shadow-[0_10px_20px_rgba(0,0,0,0.12)]">
+                    <h3 class="mb-2 text-lg">JavaScript</h3>
+                    <p class="mx-auto max-w-[600px] text-sm text-slate-500">Menambahkan interaksi dan logika pada halaman web.</p>
                 </article>
-                <article class="card">
-                    <h3>CodeIgniter</h3>
-                    <p>Membangun aplikasi web berbasis PHP dengan framework CodeIgniter.</p>
+                <article class="w-[240px] rounded-xl border border-slate-200 bg-white px-[18px] py-6 shadow-[0_4px_8px_rgba(0,0,0,0.06)] transition-[transform,box-shadow] duration-200 hover:-translate-y-1.5 hover:shadow-[0_10px_20px_rgba(0,0,0,0.12)]">
+                    <h3 class="mb-2 text-lg">CodeIgniter</h3>
+                    <p class="mx-auto max-w-[600px] text-sm text-slate-500">Membangun aplikasi web berbasis PHP dengan framework CodeIgniter.</p>
                 </article>
-                <article class="card">
-                    <h3>PHP</h3>
-                    <p>Membuat logika di sisi server untuk aplikasi web dinamis.</p>
+                <article class="w-[240px] rounded-xl border border-slate-200 bg-white px-[18px] py-6 shadow-[0_4px_8px_rgba(0,0,0,0.06)] transition-[transform,box-shadow] duration-200 hover:-translate-y-1.5 hover:shadow-[0_10px_20px_rgba(0,0,0,0.12)]">
+                    <h3 class="mb-2 text-lg">PHP</h3>
+                    <p class="mx-auto max-w-[600px] text-sm text-slate-500">Membuat logika di sisi server untuk aplikasi web dinamis.</p>
                 </article>
-                <article class="card">
-                    <h3>Python</h3>
-                    <p>Menulis program dan skrip sederhana untuk mengolah data.</p>
+                <article class="w-[240px] rounded-xl border border-slate-200 bg-white px-[18px] py-6 shadow-[0_4px_8px_rgba(0,0,0,0.06)] transition-[transform,box-shadow] duration-200 hover:-translate-y-1.5 hover:shadow-[0_10px_20px_rgba(0,0,0,0.12)]">
+                    <h3 class="mb-2 text-lg">Python</h3>
+                    <p class="mx-auto max-w-[600px] text-sm text-slate-500">Menulis program dan skrip sederhana untuk mengolah data.</p>
                 </article>
-                <article class="card">
-                    <h3>MySQL</h3>
-                    <p>Mengelola dan menyimpan data aplikasi dalam basis data.</p>
+                <article class="w-[240px] rounded-xl border border-slate-200 bg-white px-[18px] py-6 shadow-[0_4px_8px_rgba(0,0,0,0.06)] transition-[transform,box-shadow] duration-200 hover:-translate-y-1.5 hover:shadow-[0_10px_20px_rgba(0,0,0,0.12)]">
+                    <h3 class="mb-2 text-lg">MySQL</h3>
+                    <p class="mx-auto max-w-[600px] text-sm text-slate-500">Mengelola dan menyimpan data aplikasi dalam basis data.</p>
                 </article>
-                <article class="card">
-                    <h3>Arduino</h3>
-                    <p>Membuat prototipe sederhana berbasis mikrokontroler.</p>
+                <article class="w-[240px] rounded-xl border border-slate-200 bg-white px-[18px] py-6 shadow-[0_4px_8px_rgba(0,0,0,0.06)] transition-[transform,box-shadow] duration-200 hover:-translate-y-1.5 hover:shadow-[0_10px_20px_rgba(0,0,0,0.12)]">
+                    <h3 class="mb-2 text-lg">Arduino</h3>
+                    <p class="mx-auto max-w-[600px] text-sm text-slate-500">Membuat prototipe sederhana berbasis mikrokontroler.</p>
                 </article>
             </div>
         </section>
     </main>
 
-    <footer id="contact">
-        <div class="footer-left">
-            <a href="#home" class="logo">Aditya<span>.dev</span></a>
+    <footer id="contact" class="flex items-center bg-slate-800 px-10 py-6 text-slate-400 max-[700px]:flex-col max-[700px]:gap-4 max-[700px]:text-center">
+        <div class="flex-1">
+            <a href="#home" class="text-[22px] font-bold text-white no-underline">Aditya<span class="text-blue-200">.dev</span></a>
         </div>
 
-        <div class="footer-center">
-            <p>Website portofolio sederhana yang dibuat untuk tugas HTML dan CSS dasar.</p>
-            <p class="copyright">&copy; 2026 Aditya Bintoro</p>
+        <div class="flex-[2] px-5 text-center">
+            <p class="mb-1 text-[13px]">Website portofolio sederhana yang dibuat untuk tugas HTML dan CSS dasar.</p>
+            <p class="mb-1 text-xs opacity-80">&copy; 2026 Aditya Bintoro</p>
         </div>
 
-        <div class="footer-right">
-            <h4>Kontak</h4>
-            <address>
-                <p>Email: <a href="mailto:adityabntoro4@gmail.com">adityabntoro4@gmail.com</a></p>
-                <p>github: <a href="https://github.com/AdityaBintoro">AdityaBintoro</a></p>
-                <p>Jakarta Timur, Indonesia</p>
+        <div class="flex-1 text-right max-[700px]:text-center">
+            <h4 class="mb-1.5 text-white">Kontak</h4>
+            <address class="not-italic">
+                <p class="my-[2px] text-[13px]">Email: <a class="text-blue-300 no-underline hover:underline" href="mailto:adityabntoro4@gmail.com">adityabntoro4@gmail.com</a></p>
+                <p class="my-[2px] text-[13px]">github: <a class="text-blue-300 no-underline hover:underline" href="https://github.com/AdityaBintoro">AdityaBintoro</a></p>
+                <p class="my-[2px] text-[13px]">Jakarta Timur, Indonesia</p>
             </address>
         </div>
     </footer>
